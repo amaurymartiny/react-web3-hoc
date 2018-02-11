@@ -1,7 +1,7 @@
 import React, { Component, isValidElement } from 'react';
 import waitForWeb3 from './waitForWeb3';
 
-const injectWeb3 = (opts = {}) => InnerComponent =>
+const injectWeb3 = opts => InnerComponent =>
   class extends Component {
     state = {
       web3: null
