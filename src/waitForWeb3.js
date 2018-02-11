@@ -13,7 +13,7 @@ const resolveWeb3 = resolve => {
     web3js = new Web3(window.web3.currentProvider);
   } else {
     // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
-    web3js = new Web3(new Web3.providers.HttpProvider('http://infura.io'));
+    web3js = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
   }
   resolve(web3js);
 };
@@ -32,7 +32,7 @@ const waitForWeb3 = () =>
 
     // Wait until window has fully loaded to resolve web3
     // See https://github.com/MetaMask/faq/blob/master/DEVELOPERS.md#partly_sunny-web3---ethereum-browser-environment-check
-    window.addEventListener('load', resolveWeb3);
+    window.addEventListener('load', () => resolveWeb3(resolve));
   });
 
 export default waitForWeb3;
