@@ -34,7 +34,7 @@ const waitForWeb3 = opts =>
     if (web3js) return resolve(web3js);
 
     // If an instance of web3 exist in window, resolve immediately
-    if (window.web3) return resolveWeb3(resolve, opts);
+    if (typeof window.web3 !== 'undefined') return resolveWeb3(resolve, opts);
 
     // Wait until window has fully loaded to resolve web3
     // See https://github.com/MetaMask/faq/blob/master/DEVELOPERS.md#partly_sunny-web3---ethereum-browser-environment-check
