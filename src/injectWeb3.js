@@ -7,12 +7,12 @@ const injectWeb3 = (opts = {}) => InnerComponent =>
       web3: null
     };
 
-    async componentWillMount() {
+    async componentWillMount () {
       const web3 = await waitForWeb3();
       this.setState({ web3 });
     }
 
-    render() {
+    render () {
       const { web3 } = this.state;
       return web3 ? <InnerComponent web3={web3} /> : this.renderLoading();
     }

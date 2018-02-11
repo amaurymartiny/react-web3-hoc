@@ -1,3 +1,4 @@
 {
-  "extends": ["standard", "standard-react"]
+  "extends": ["semistandard", "standard-react"],
+  "parser": "babel-eslint"
 }
