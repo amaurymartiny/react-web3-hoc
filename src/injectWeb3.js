@@ -18,7 +18,7 @@ const injectWeb3 = (opts = {}) => InnerComponent =>
     }
 
     renderLoading = () => {
-      if (!opts.loading) return null;
+      if (!opts || !opts.loading) return null;
       if (isValidElement(opts.loading)) return <opts.loading />;
       if (typeof opts.loading === 'function') return opts.loading();
     };
