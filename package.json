@@ -1,0 +1,21 @@
+{
+  "name": "react-web3-hoc",
+  "version": "1.0.0",
+  "description": "React HOC which injects web3 as soon as it's ready",
+  "main": "lib/index.js",
+  "repository": "https://github.com/amaurymartiny/react-web3-hoc",
+  "author": "Amaury Martiny",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.6.1",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0 || ^16.0.0"
+  }
+}
