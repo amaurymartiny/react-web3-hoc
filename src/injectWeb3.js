@@ -8,7 +8,7 @@ const injectWeb3 = opts => InnerComponent =>
     };
 
     async componentWillMount () {
-      const web3 = await waitForWeb3();
+      const web3 = await waitForWeb3(opts);
       this.setState({ web3 });
     }
 
