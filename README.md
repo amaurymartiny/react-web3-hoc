@@ -66,7 +66,7 @@ export default class MyComponent extends Component {
 }
 ```
 
-`injectWeb3` HOC accepts the following options, all optional.
+`opts` is an object with the following fields, all optional.
 
 * `fallbackProvider`, string (default: `'http://localhost:8545'`). The HOC will by default use `new Web3(window.web3.currentProvider)` as web3 instance. If `window.web3` is not present, then it will use `fallbackProvider` via HTTP.
 * `loading`, React component or function (default: `null`). The component to show when web3 is not loaded yet.
