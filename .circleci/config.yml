@@ -33,8 +33,11 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
         
-      # run tests!
+      # Run tests!
       - run: yarn run test:coverage
+
+      # Add code coverage report
+      - run: bash <(curl -s https://codecov.io/bash)
 
       - store_artifacts:
           path: coverage
