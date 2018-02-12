@@ -16,7 +16,8 @@
   "scripts": {
     "build": "babel src --out-dir build",
     "lint": "eslint src",
-    "test": "jest "
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   },
   "jest": {
     "collectCoverageFrom": [

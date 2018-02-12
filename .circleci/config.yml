@@ -34,7 +34,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
         
       # run tests!
-      - run: yarn test --coverage
+      - run: yarn run test:coverage
 
       - store_artifacts:
           path: coverage
