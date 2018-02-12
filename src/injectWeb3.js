@@ -1,4 +1,4 @@
-import React, { Component, isValidElement } from 'react';
+import React, { Component } from 'react';
 import waitForWeb3 from './waitForWeb3';
 
 const injectWeb3 = opts => InnerComponent =>
@@ -19,8 +19,7 @@ const injectWeb3 = opts => InnerComponent =>
 
     renderLoading = () => {
       if (!opts || !opts.loading) return null;
-      if (isValidElement(opts.loading)) return <opts.loading />;
-      if (typeof opts.loading === 'function') return opts.loading();
+      return <opts.loading />;
     };
   };
 
