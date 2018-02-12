@@ -3,14 +3,14 @@ beforeEach(() => {
 });
 
 it('should use http://localhost:8545 by default', async () => {
-  const waitForWeb3 = require('./waitForWeb3').default;
+  const waitForWeb3 = require('../waitForWeb3').default;
   const web3 = await waitForWeb3();
 
   expect(web3.currentProvider.host).toBe('http://localhost:8545');
 });
 
 it('should handle a fallbackProvider', async () => {
-  const waitForWeb3 = require('./waitForWeb3').default;
+  const waitForWeb3 = require('../waitForWeb3').default;
   const web3 = await waitForWeb3({ fallbackProvider: 'Foo' });
 
   expect(web3.currentProvider.host).toBe('Foo');
@@ -26,7 +26,7 @@ describe('when window.web3 is present', () => {
   });
 
   it('should take provider from injected web3', async () => {
-    const waitForWeb3 = require('./waitForWeb3').default;
+    const waitForWeb3 = require('../waitForWeb3').default;
     const web3 = await waitForWeb3();
 
     expect(web3.currentProvider.host).toBe('Bar');
@@ -47,7 +47,7 @@ describe('when window takes time to load', () => {
   });
 
   it('should wait until window loads and fetch web3', async () => {
-    const waitForWeb3 = require('./waitForWeb3').default;
+    const waitForWeb3 = require('../waitForWeb3').default;
     const web3 = await waitForWeb3();
 
     expect(web3).not.toBeNull();
@@ -63,7 +63,7 @@ describe('when window takes time to load', () => {
 });
 
 describe('when calling multiple times waitForWeb3', () => {
-  const waitForWeb3 = require('./waitForWeb3').default;
+  const waitForWeb3 = require('../waitForWeb3').default;
   let localWeb3;
 
   beforeAll(() => {

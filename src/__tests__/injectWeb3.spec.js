@@ -3,7 +3,7 @@ import { configure, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import toJson from 'enzyme-to-json';
 
-import injectWeb3 from './injectWeb3';
+import injectWeb3 from '../injectWeb3';
 
 const MyComponent = () => <div>Test</div>;
 
