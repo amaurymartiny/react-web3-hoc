@@ -2,6 +2,8 @@
 
 React HOC which injects web3 as soon as it's ready.
 
+![circle-ci](https://circleci.com/gh/amaurymartiny/react-web3-hoc.svg?style=shield&circle-token=:circle-token)
+
 ## Usage
 
 ```jsx
