@@ -3,8 +3,8 @@
   "version": "1.0.2",
   "description": "React HOC which injects web3 as soon as it's ready",
   "main": "build/index.js",
-  "module": "src/index.js",
-  "jsnext:main": "src/index.js",
+  "module": "build/index.js",
+  "jsnext:main": "build/index.js",
   "repository": "https://github.com/amaurymartiny/react-web3-hoc",
   "keywords": [
     "react",
