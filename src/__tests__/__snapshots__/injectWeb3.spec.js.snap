@@ -510,7 +510,9 @@ exports[`when loaded should render correctly 1`] = `
       }
     }
   >
-    <div>
+    <div
+      className="test"
+    >
       Test
     </div>
   </MyComponent>

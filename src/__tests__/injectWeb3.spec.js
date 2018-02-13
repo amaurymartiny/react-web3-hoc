@@ -5,7 +5,7 @@ import toJson from 'enzyme-to-json';
 
 import injectWeb3 from '../injectWeb3';
 
-const MyComponent = () => <div>Test</div>;
+const MyComponent = () => <div className='test'>Test</div>;
 
 configure({ adapter: new Adapter() });
 

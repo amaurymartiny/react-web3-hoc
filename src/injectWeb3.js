@@ -14,7 +14,11 @@ const injectWeb3 = opts => InnerComponent =>
 
     render () {
       const { web3 } = this.state;
-      return web3 ? <InnerComponent web3={web3} /> : this.renderLoading();
+      return web3 ? (
+        <InnerComponent web3={web3} {...this.props} />
+      ) : (
+        this.renderLoading()
+      );
     }
 
     renderLoading = () => {
