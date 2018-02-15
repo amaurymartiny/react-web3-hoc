@@ -1,6 +1,6 @@
 import Web3 from 'web3';
 
-let web3js;
+export let web3js;
 
 /**
  * Resolve with web3 instance
