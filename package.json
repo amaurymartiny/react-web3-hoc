@@ -1,6 +1,6 @@
 {
   "name": "react-web3-hoc",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React HOC which injects web3 as soon as it's ready",
   "main": "build/index.js",
   "module": "build/index.js",
