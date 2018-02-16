@@ -1,6 +1,11 @@
 import Web3 from 'web3';
 
-export let web3js;
+let web3js;
+
+/**
+ * Return the web3 object
+ */
+export const getWeb3 = () => web3js;
 
 /**
  * Resolve with web3 instance
