@@ -9,14 +9,14 @@ exports[`when loaded should render correctly 1`] = `
         "_provider": HttpProvider {
           "connected": false,
           "headers": undefined,
-          "host": "http://localhost:8545",
+          "host": "Foo",
           "timeout": 0,
         },
         "_requestManager": RequestManager {
           "provider": HttpProvider {
             "connected": false,
             "headers": undefined,
-            "host": "http://localhost:8545",
+            "host": "Foo",
             "timeout": 0,
           },
           "providers": Object {
@@ -41,7 +41,7 @@ exports[`when loaded should render correctly 1`] = `
         "currentProvider": HttpProvider {
           "connected": false,
           "headers": undefined,
-          "host": "http://localhost:8545",
+          "host": "Foo",
           "timeout": 0,
         },
         "eth": Eth {
@@ -51,14 +51,14 @@ exports[`when loaded should render correctly 1`] = `
           "_provider": HttpProvider {
             "connected": false,
             "headers": undefined,
-            "host": "http://localhost:8545",
+            "host": "Foo",
             "timeout": 0,
           },
           "_requestManager": RequestManager {
             "provider": HttpProvider {
               "connected": false,
               "headers": undefined,
-              "host": "http://localhost:8545",
+              "host": "Foo",
               "timeout": 0,
             },
             "providers": Object {
@@ -109,14 +109,14 @@ exports[`when loaded should render correctly 1`] = `
             "_provider": HttpProvider {
               "connected": false,
               "headers": undefined,
-              "host": "http://localhost:8545",
+              "host": "Foo",
               "timeout": 0,
             },
             "_requestManager": RequestManager {
               "provider": HttpProvider {
                 "connected": false,
                 "headers": undefined,
-                "host": "http://localhost:8545",
+                "host": "Foo",
                 "timeout": 0,
               },
               "providers": Object {
@@ -129,7 +129,7 @@ exports[`when loaded should render correctly 1`] = `
             "currentProvider": HttpProvider {
               "connected": false,
               "headers": undefined,
-              "host": "http://localhost:8545",
+              "host": "Foo",
               "timeout": 0,
             },
             "givenProvider": null,
@@ -155,7 +155,7 @@ exports[`when loaded should render correctly 1`] = `
           "currentProvider": HttpProvider {
             "connected": false,
             "headers": undefined,
-            "host": "http://localhost:8545",
+            "host": "Foo",
             "timeout": 0,
           },
           "defaultAccount": null,
@@ -190,14 +190,14 @@ exports[`when loaded should render correctly 1`] = `
             "_provider": HttpProvider {
               "connected": false,
               "headers": undefined,
-              "host": "http://localhost:8545",
+              "host": "Foo",
               "timeout": 0,
             },
             "_requestManager": RequestManager {
               "provider": HttpProvider {
                 "connected": false,
                 "headers": undefined,
-                "host": "http://localhost:8545",
+                "host": "Foo",
                 "timeout": 0,
               },
               "providers": Object {
@@ -210,7 +210,7 @@ exports[`when loaded should render correctly 1`] = `
             "currentProvider": HttpProvider {
               "connected": false,
               "headers": undefined,
-              "host": "http://localhost:8545",
+              "host": "Foo",
               "timeout": 0,
             },
             "extend": [Function],
@@ -231,14 +231,14 @@ exports[`when loaded should render correctly 1`] = `
             "_provider": HttpProvider {
               "connected": false,
               "headers": undefined,
-              "host": "http://localhost:8545",
+              "host": "Foo",
               "timeout": 0,
             },
             "_requestManager": RequestManager {
               "provider": HttpProvider {
                 "connected": false,
                 "headers": undefined,
-                "host": "http://localhost:8545",
+                "host": "Foo",
                 "timeout": 0,
               },
               "providers": Object {
@@ -251,7 +251,7 @@ exports[`when loaded should render correctly 1`] = `
             "currentProvider": HttpProvider {
               "connected": false,
               "headers": undefined,
-              "host": "http://localhost:8545",
+              "host": "Foo",
               "timeout": 0,
             },
             "defaultAccount": null,
@@ -267,14 +267,14 @@ exports[`when loaded should render correctly 1`] = `
               "_provider": HttpProvider {
                 "connected": false,
                 "headers": undefined,
-                "host": "http://localhost:8545",
+                "host": "Foo",
                 "timeout": 0,
               },
               "_requestManager": RequestManager {
                 "provider": HttpProvider {
                   "connected": false,
                   "headers": undefined,
-                  "host": "http://localhost:8545",
+                  "host": "Foo",
                   "timeout": 0,
                 },
                 "providers": Object {
@@ -287,7 +287,7 @@ exports[`when loaded should render correctly 1`] = `
               "currentProvider": HttpProvider {
                 "connected": false,
                 "headers": undefined,
-                "host": "http://localhost:8545",
+                "host": "Foo",
                 "timeout": 0,
               },
               "extend": [Function],
@@ -339,14 +339,14 @@ exports[`when loaded should render correctly 1`] = `
           "_provider": HttpProvider {
             "connected": false,
             "headers": undefined,
-            "host": "http://localhost:8545",
+            "host": "Foo",
             "timeout": 0,
           },
           "_requestManager": RequestManager {
             "provider": HttpProvider {
               "connected": false,
               "headers": undefined,
-              "host": "http://localhost:8545",
+              "host": "Foo",
               "timeout": 0,
             },
             "providers": Object {
@@ -362,7 +362,7 @@ exports[`when loaded should render correctly 1`] = `
           "currentProvider": HttpProvider {
             "connected": false,
             "headers": undefined,
-            "host": "http://localhost:8545",
+            "host": "Foo",
             "timeout": 0,
           },
           "deleteKeyPair": [Function],
@@ -385,14 +385,14 @@ exports[`when loaded should render correctly 1`] = `
             "_provider": HttpProvider {
               "connected": false,
               "headers": undefined,
-              "host": "http://localhost:8545",
+              "host": "Foo",
               "timeout": 0,
             },
             "_requestManager": RequestManager {
               "provider": HttpProvider {
                 "connected": false,
                 "headers": undefined,
-                "host": "http://localhost:8545",
+                "host": "Foo",
                 "timeout": 0,
               },
               "providers": Object {
@@ -405,7 +405,7 @@ exports[`when loaded should render correctly 1`] = `
             "currentProvider": HttpProvider {
               "connected": false,
               "headers": undefined,
-              "host": "http://localhost:8545",
+              "host": "Foo",
               "timeout": 0,
             },
             "extend": [Function],

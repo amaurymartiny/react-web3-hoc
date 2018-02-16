@@ -14,7 +14,9 @@ describe('when loading', () => {
   // because this.state.web3 is initialized to null in the HOC. See 'when
   // loaded' tests to see how to test a loaded MyComponent
   it('should return null by default', () => {
-    const WrappedComponent = injectWeb3()(MyComponent);
+    const WrappedComponent = injectWeb3({ fallbackProvider: 'Foo' })(
+      MyComponent
+    );
     const wrapper = mount(<WrappedComponent />);
 
     expect(toJson(wrapper)).toMatchSnapshot();
@@ -22,6 +24,7 @@ describe('when loading', () => {
 
   it('should return the loading function if present', () => {
     const WrappedComponent = injectWeb3({
+      fallbackProvider: 'Foo',
       loading: () => <div>loading from function...</div>
     })(MyComponent);
     const wrapper = mount(<WrappedComponent />);
@@ -36,6 +39,7 @@ describe('when loading', () => {
       }
     }
     const WrappedComponent = injectWeb3({
+      fallbackProvider: 'Foo',
       loading: Loading
     })(MyComponent);
     const wrapper = mount(<WrappedComponent />);
@@ -46,7 +50,9 @@ describe('when loading', () => {
 
 describe('when loaded', () => {
   it('should render correctly', async () => {
-    const WrappedComponent = injectWeb3()(MyComponent);
+    const WrappedComponent = injectWeb3({ fallbackProvider: 'Foo' })(
+      MyComponent
+    );
     const wrapper = mount(<WrappedComponent />);
     await wrapper.instance().componentWillMount();
     wrapper.update();
@@ -55,13 +61,13 @@ describe('when loaded', () => {
   });
 
   it('should have web3 as props', async () => {
-    const WrappedComponent = injectWeb3()(MyComponent);
+    const WrappedComponent = injectWeb3({ fallbackProvider: 'Foo' })(
+      MyComponent
+    );
     const wrapper = mount(<WrappedComponent />);
     await wrapper.instance().componentWillMount();
     const InnerComponent = wrapper.update().find(MyComponent);
 
-    expect(InnerComponent.props().web3.currentProvider.host).toBe(
-      'http://localhost:8545'
-    );
+    expect(InnerComponent.props().web3.currentProvider.host).toBe('Foo');
   });
 });

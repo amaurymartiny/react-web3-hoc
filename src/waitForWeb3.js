@@ -7,19 +7,15 @@ export let web3js;
  * @param {function} resolve Resolve function to call with web3 as argument
  */
 const resolveWeb3 = (resolve, opts) => {
-  const options = {
-    fallbackProvider: 'http://localhost:8545',
-    ...opts
-  };
   // Checking if Web3 has been injected by the browser (Mist/MetaMask)
   if (typeof window.web3 !== 'undefined') {
     // Use Mist/MetaMask's provider
     web3js = new Web3(window.web3.currentProvider);
   } else {
-    // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
-    web3js = new Web3(
-      new Web3.providers.HttpProvider(options.fallbackProvider)
-    );
+    // Fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail) if present
+    if (opts && opts.fallbackProvider) {
+      web3js = new Web3(new Web3.providers.HttpProvider(opts.fallbackProvider));
+    }
   }
   resolve(web3js);
 };

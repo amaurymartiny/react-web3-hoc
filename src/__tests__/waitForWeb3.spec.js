@@ -6,7 +6,7 @@ it('should use http://localhost:8545 by default', async () => {
   const waitForWeb3 = require('../waitForWeb3').default;
   const web3 = await waitForWeb3();
 
-  expect(web3.currentProvider.host).toBe('http://localhost:8545');
+  expect(web3).toBe(undefined);
 });
 
 it('should handle a fallbackProvider', async () => {
