@@ -531,7 +531,7 @@ exports[`when loading should return InnerComponent by default 1`] = `
 </_class2>
 `;
 
-exports[`when loading should return null by if loading is specified as null 1`] = `<_class2 />`;
+exports[`when loading should return null if loading is specified as null 1`] = `<_class2 />`;
 
 exports[`when loading should return the loading component if present 1`] = `
 <_class2>
