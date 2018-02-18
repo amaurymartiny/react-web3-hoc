@@ -71,7 +71,7 @@ export default class MyComponent extends Component {
 `opts` is an object with the following fields, all optional.
 
 * `fallbackProvider`, string (default: `null`). The HOC will by default use `new Web3(window.web3.currentProvider)` as web3 instance. If `window.web3` is not present, then it will use `fallbackProvider` via HTTP. If no `fallbackProvider` has been specified, then `web3` will remain `undefined`.
-* `loading`, React component or function (default: `null`). The component to show when web3 is not loaded yet.
+* `loading`, React component or function (default: `MyComponent`, i.e. the inner component). The component to show when web3 is not present or not loaded yet. It will load the inner component by default. A loader component (like a spinner) can be put if you wish to show this loader while web3 is being loaded. Put `null` here if you wish to show nothing instead.
 
 ## Contributing
 

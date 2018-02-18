@@ -22,7 +22,10 @@ const injectWeb3 = opts => InnerComponent =>
     }
 
     renderLoading = () => {
-      if (!opts || !opts.loading) return null;
+      if (!opts || opts.loading === undefined) {
+        return <InnerComponent {...this.props} />;
+      }
+      if (opts.loading === null) return null;
       return <opts.loading />;
     };
   };

@@ -519,7 +519,19 @@ exports[`when loaded should render correctly 1`] = `
 </_class2>
 `;
 
-exports[`when loading should return null by default 1`] = `<_class2 />`;
+exports[`when loading should return InnerComponent by default 1`] = `
+<_class2>
+  <MyComponent>
+    <div
+      className="test"
+    >
+      Test
+    </div>
+  </MyComponent>
+</_class2>
+`;
+
+exports[`when loading should return null by if loading is specified as null 1`] = `<_class2 />`;
 
 exports[`when loading should return the loading component if present 1`] = `
 <_class2>

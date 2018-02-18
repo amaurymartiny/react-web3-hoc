@@ -13,10 +13,20 @@ describe('when loading', () => {
   // injectWeb3(MyComponent) will by default show the loading component here,
   // because this.state.web3 is initialized to null in the HOC. See 'when
   // loaded' tests to see how to test a loaded MyComponent
-  it('should return null by default', () => {
+  it('should return InnerComponent by default', () => {
     const WrappedComponent = injectWeb3({ fallbackProvider: 'Foo' })(
       MyComponent
     );
+    const wrapper = mount(<WrappedComponent />);
+
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
+
+  it('should return null if loading is specified as null', () => {
+    const WrappedComponent = injectWeb3({
+      fallbackProvider: 'Foo',
+      loading: null
+    })(MyComponent);
     const wrapper = mount(<WrappedComponent />);
 
     expect(toJson(wrapper)).toMatchSnapshot();
